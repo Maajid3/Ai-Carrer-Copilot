@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+  --font-nunito: "Nunito", sans-serif;
+  --font-koltav: "koltav", sans-serif;
+}
+
+@font-face {
+  font-family: koltav;
+  src: url(./fonts/Koltav-Regular-BF699537d86c952.ttf);
+}
