@@ -65,7 +65,7 @@ export default function DetailedChatView() {
         {skills.map((item, index) => (
           <span
             key={`${item}-${index}`}
-            className={`max-w-full break-all rounded-full border px-3 py-1.5 text-xs font-medium uppercase tracking-wide ${toneStyles[tone]}`}
+            className={`max-w-full break-all rounded-full border px-4 py-2 text-xs font-medium uppercase tracking-wide ${toneStyles[tone]}`}
           >
             {item}
           </span>
@@ -164,7 +164,7 @@ export default function DetailedChatView() {
               )}
             </div>
 
-            <div className="grid min-w-0 gap-4 md:grid-cols-2 xl:grid-cols-3">
+            <div className="flex flex-col items-center min-w-0 gap-4">
               <div className="w-full min-w-0 rounded-2xl border border-white/10 bg-[#0f1116] p-4">
                 <h3 className="mb-3 text-[0.7rem] font-bold uppercase tracking-[0.16em] text-cyan-300">
                   Job Skills
