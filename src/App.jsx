@@ -5,6 +5,7 @@ import { Route, Routes } from "react-router";
 import AuthPage from "./components/AuthPage";
 import AiChats from "./components/AiChats";
 import DetailedChatView from "./components/DetailedChatView";
+import ProtectedRoutes from "./protected-routes/ProtectedRoutes";
 
 function App() {
   return (
@@ -28,7 +29,15 @@ function App() {
             <Routes>
               <Route path="/" element={<InputBar />} />
               <Route path="login" element={<AuthPage />} />
-              <Route path="chats" element={<AiChats />} />
+
+              <Route
+                path="chats"
+                element={
+                  <ProtectedRoutes>
+                    <AiChats />
+                  </ProtectedRoutes>
+                }
+              />
               <Route path="chat-preview/:id" element={<DetailedChatView />} />
             </Routes>
           </div>

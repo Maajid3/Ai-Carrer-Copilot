@@ -23,8 +23,7 @@ export default function Header() {
     if (isLoading) return;
 
     if (!user) {
-      alert("Please Sign in");
-      navigate("/login");
+      navigate("/login",{state:{message:"Please Login to access chats!"}});
       return;
     }
 
