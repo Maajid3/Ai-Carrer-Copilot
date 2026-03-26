@@ -2,7 +2,7 @@ import supabaseClient from "../api/supabaseClient";
 import logo from "/logo.svg";
 import googleIcon from "../assets/google.svg";
 import { useState } from "react";
-import { useLocation } from "react-router";
+import { useLocation } from "react-router-dom";
 
 export default function AuthPage() {
   const [providerError, setProviderError] = useState(false);

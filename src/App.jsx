@@ -1,7 +1,7 @@
 import InputBar from "./components/InputBar";
 import Header from "./components/Header";
 import Orb from "./components/Orb";
-import { Route, Routes } from "react-router";
+import { Route, Routes } from "react-router-dom";
 import AuthPage from "./components/AuthPage";
 import AiChats from "./components/AiChats";
 import DetailedChatView from "./components/DetailedChatView";

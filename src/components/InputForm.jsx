@@ -4,7 +4,6 @@ import FileUpload from "./FileUpload";
 import AnalyzeBtn from "./AnalyzeBtn";
 import { useMutation } from "@tanstack/react-query";
 import apiClient from "../api/apiClient";
-import supabaseClient from "../api/supabaseClient";
 import { useUserContext } from "../context/useUserContext";
 
 export default function InputFrom({ onResponse }) {
