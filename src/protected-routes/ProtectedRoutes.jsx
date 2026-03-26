@@ -1,9 +1,9 @@
 import { Navigate, useLocation } from "react-router-dom";
-import { useAuth } from "../context/AuthContext"; 
+import { useUserContext } from "../context/useUserContext";
 
 function ProtectedRoutes({ children }) {
   const location = useLocation();
-  const { user, authLoading } = useAuth();
+  const { user, authLoading } = useUserContext();
 
   if (authLoading) {
     return <div className="text-sm text-zinc-300">Checking session...</div>;
